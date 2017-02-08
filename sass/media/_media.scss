@@ -1,5 +1,8 @@
 @media (max-width: 767px){
     header {
+        nav.nav-wrap.display-off {
+            display: none;
+        }
         ul.nav {
             height: 0;
             transition: 0.5s;
@@ -16,7 +19,7 @@
     header {
         nav.nav-wrap.active {
             li {
-                display: block;
+                //display: block;
             }
             ul.nav {
                 height: 150px;
