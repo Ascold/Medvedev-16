@@ -1,0 +1,27 @@
+@media (max-width: 767px){
+    header {
+        ul.nav {
+            height: 0;
+            transition: 0.5s;
+            text-align: center;
+            overflow: hidden;
+            li {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    header {
+        nav.nav-wrap.active {
+            li {
+                display: block;
+            }
+            ul.nav {
+                height: 150px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
