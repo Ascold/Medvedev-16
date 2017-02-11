@@ -60,5 +60,9 @@ $(document).ready(function () {
         $('div#tabs>div').removeClass('active');
         $('#tab-head-3').addClass('active');
         $('#tabs-3').addClass('active')
+    });
+    $('#inputPassword2').hover(function () {
+        $('#tooltip').toggleClass('visible')
     })
 });
+
