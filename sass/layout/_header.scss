@@ -1,12 +1,14 @@
 header {
-    text-align: right;
-    ul.nav li {
-        display: inline-block;
-        a {
+    ul.nav {
+        text-align: right;
+        li {
             display: inline-block;
-            text-align: center;
-            padding: 9px 40px;
-            text-decoration: none;
+            a {
+                display: inline-block;
+                text-align: center;
+                padding: 9px 40px;
+                text-decoration: none;
+            }
         }
     }
 }

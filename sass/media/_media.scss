@@ -17,10 +17,7 @@
 
 @media (max-width: 767px){
     header {
-        nav.nav-wrap.active {
-            li {
-                //display: block;
-            }
+        nav.nav-wrap.display-on {
             ul.nav {
                 height: 150px;
                 transition: 0.5s;
