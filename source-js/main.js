@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('body').animate('scrollTop',
+    $('header li').offsetTop);
     //script for dropdown
     $('#navbar-button').on('click', function () {
         if ($('#navbar-top').hasClass('display-off')) {
@@ -13,26 +15,30 @@ $(document).ready(function () {
         }, 1)
     });
     //script for accordion
-    $('.accordion>h3').on('click', function () {
-        $('.accordion>h3').removeClass('active');
-        $('.accordion>div').removeClass('active');
         $('#head-1').on('click', function () {
-            $('#head-1').addClass('active');
-            $('#block-1').addClass('active');
+            $('.accordion>h3').removeClass('active');
+            $('.accordion>div').removeClass('active');
+            $('#head-1').toggleClass('active');
+            $('#block-1').toggleClass('active');
         });
         $('#head-2').on('click', function () {
-            $('#head-2').addClass('active');
-            $('#block-2').addClass('active');
+            $('.accordion>h3').removeClass('active');
+            $('.accordion>div').removeClass('active');
+            $('#head-2').toggleClass('active');
+            $('#block-2').toggleClass('active');
         });
         $('#head-3').on('click', function () {
-            $('#head-3').addClass('active');
-            $('#block-3').addClass('active');
+            $('.accordion>h3').removeClass('active');
+            $('.accordion>div').removeClass('active');
+            $('#head-3').toggleClass('active');
+            $('#block-3').toggleClass('active');
         });
         $('#head-4').on('click', function () {
-            $('#head-4').addClass('active');
-            $('#block-4').addClass('active');
+            $('.accordion>h3').removeClass('active');
+            $('.accordion>div').removeClass('active');
+            $('#head-4').toggleClass('active');
+            $('#block-4').toggleClass('active');
         });
-    });
     //script for modal
     $('#open-modal').on('click', function () {
         $('.dialog').addClass('visible');
